@@ -1,16 +1,24 @@
 package io.github.glaucials.controleveiculos.response;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 import java.util.List;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class ListaModelosResponse {
 
     private List<ModeloResponse> modelos;
+
+    public List<ModeloResponse> getModelos() {
+        return modelos;
+    }
+
+    public void setModelos(List<ModeloResponse> modelos) {
+        this.modelos = modelos;
+    }
+
+    public ListaModelosResponse() {
+    }
+
+    public ListaModelosResponse(List<ModeloResponse> modelos) {
+        this.modelos = modelos;
+    }
 
 }

@@ -1,15 +1,31 @@
 package io.github.glaucials.controleveiculos.response;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class ModeloResponse {
 
     private String codigo;
     private String nome;
 
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public ModeloResponse() {
+    }
+
+    public ModeloResponse(String codigo, String nome) {
+        this.codigo = codigo;
+        this.nome = nome;
+    }
 }
